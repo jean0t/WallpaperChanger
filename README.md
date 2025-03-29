@@ -10,7 +10,7 @@ Available soon...
 
 Strategy Pattern was the choice for this project.  
 **Why?**  
-It uses the same pattern for implementing a class, set\_wallpaper() that will only differ in the desktop environment used. To make the implementation consistent and organized that pattern was chosen.  
+It uses the same pattern to implement a class, set\_wallpaper() that will only differ in the desktop environment used. To make the implementation consistent and organized that pattern was chosen.  
 
 ***
 
