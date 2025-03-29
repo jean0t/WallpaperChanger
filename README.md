@@ -19,6 +19,7 @@ It uses the same pattern for implementing a class, set\_wallpaper() that will on
 3. The file discover\_de.py will hold the function Discover() that is responsible to dynamically discover the desktop environment used.  
 4. main.py will be the file haboring the main function with all its logic and the starting point for the program.  
 5. run.py is the file responsible to provide the cli interface.
+6. error.py is needed inside desktop\_environments because it provides a unified interface to write errors, making it easier to debug without duplication of code or hard coded strings.
 
 ***
 
@@ -32,6 +33,7 @@ wallpaperchanger/
 │   ├── sway.py  
 │   ├── unknown.py  
 │   └── xfce.py  
+│   └── error.py  
 ├── discover\_de.py  
 └── main.py  
 
