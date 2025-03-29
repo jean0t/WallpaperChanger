@@ -21,7 +21,7 @@ It uses the same pattern for implementing a class, set\_wallpaper() that will on
 
 tree of the project:  
 wallpaperchanger/  
-├── desktop\_environments  
+├── desktop\_environments/  
 │   ├── base.py  
 │   ├── gnome.py  
 │   ├── \_\_init\_\_.py  
