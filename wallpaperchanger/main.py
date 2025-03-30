@@ -42,7 +42,7 @@ DESKTOP_ENVIRONMENT_MAP = {
 
 def main(wallpaper_path: PosixPath) -> None:
 	desktop = Discover().lower()
-	changer = DESKTOP_ENVIRONMENT_MAP.get(desktop, UnknownEnvironment)()
 
-	# to_do: complete the main function
-	pass
+	# get the correspondent class and instanciate immediately, falls to UnknownEnvironment if there is no match
+	changer = DESKTOP_ENVIRONMENT_MAP.get(desktop, UnknownEnvironment)()
+	changer.set_wallpaper(wallpaper_path)
