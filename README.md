@@ -1,54 +1,66 @@
-# WallpaperChanger
-***
-The goal of this repository is to provide a full fledge application to linux desktops to change wallpapers agnostic to Desktop Environment. But It will need dependencies depending on the Desktop Environment used.
+# WallpaperChanger 🖼️🚀
 
-## Dependencies
+***  
+The goal of this repository is to provide a full-fledged application for Linux desktops to change wallpapers, agnostic to the Desktop Environment. It will include dependencies based on the Desktop Environment used.  
+***  
 
-**KDE:** Depends on `qdbus`  
-_more soon_
+## Dependencies 🔧
 
-## How the Project is Organized
+- **KDE:** Depends on `qdbus`  
+  _more soon..._
 
-Strategy Pattern was the choice for this project.  
+## How the Project is Organized 🗂️
+
+The **Strategy Pattern** was chosen for this project.  
 **Why?**  
-It uses the same pattern to implement a class, the set\_wallpaper(), that will only differ in the desktop environment used. To make the implementation consistent and organized that pattern was chosen.  
+It enforces the implementation of a common `set_wallpaper()` method that differs only in the desktop environment used, keeping the code consistent and organized.
 
-***
+***  
 
-1. We start by implementing an abstract class DesktopEnvironment with the method set\_wallpaper, this will force all other derived classes to follow its model.  
-2. Then we implement the classes for each desktop environment.  
-3. The file discover\_de.py will hold the function Discover() that is responsible to dynamically discover the desktop environment used.  
-4. main.py will be the file haboring the main function with all its logic and the starting point for the program.  
-5. run.py is the file responsible to provide the cli interface.
-6. error.py is needed inside desktop\_environments because it provides a unified interface to write errors, making it easier to debug without duplication of code or hard coded strings.
+1. **Abstract Class:**  
+   We start by implementing an abstract class `DesktopEnvironment` with the method `set_wallpaper()`, forcing all derived classes to follow its model.  
+2. **Environment Classes:**  
+   Then we implement the classes for each desktop environment.  
+3. **Dynamic Discovery:**  
+   The file `discover_de.py` holds the `Discover()` function responsible for dynamically detecting the desktop environment in use.  
+4. **Main Logic:**  
+   `main.py` contains the main function with all the logic and serves as the starting point for the program.  
+5. **CLI Interface:**  
+   `run.py` provides the command-line interface for the program.  
+6. **Error Handling:**  
+   `error.py` is located inside `desktop_environments` and provides a unified way to handle errors, making debugging easier without code duplication or hard-coded strings.
 
-***
+***  
 
-tree of the project:  
-wallpaperchanger/  
-├── desktop\_environments/  
-│   ├── base.py  
-│   ├── error.py  
-│   ├── gnome.py  
-│   ├── hyprland.py  
-│   ├── i3.py  
-│   ├── \_\_init\_\_.py  
-│   ├── kde.py  
-│   ├── lxqt.py  
-│   ├── sway.py  
-│   ├── unknown.py  
-│   └── xfce.py  
-├── discover\_de.py  
-└── main.py  
+## Project Tree 🌳
 
-## License
+```
+wallpaperchanger/
+├── desktop_environments/
+│   ├── base.py
+│   ├── error.py
+│   ├── gnome.py
+│   ├── hyprland.py
+│   ├── i3.py
+│   ├── __init__.py
+│   ├── kde.py
+│   ├── lxqt.py
+│   ├── sway.py
+│   ├── unknown.py
+│   └── xfce.py
+├── discover_de.py
+└── main.py
+```
+
+## License 📜
 
 GPL-3
 
-## Contributions
+## Contributions 🤝
 
-Feel free to send pull requests or to fork the project, I will be very happy to have more people into it.
+Feel free to send pull requests or fork the project. I'm always excited to have more people involved!  
 
-## TO DO
-_really ambitious :P_  
-- [ ] refactor to no third party dependencies
+## TO DO 📝
+
+_Really ambitious 😄 :P_  
+- [ ] Refactor to remove third-party dependencies
