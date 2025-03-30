@@ -1,9 +1,10 @@
 from wallpaperchanger.desktop_environments.base import DesktopEnvironment
-from wallpaperchanger.desktop_environments.error import Error 
+from wallpaperchanger.desktop_environments.error import Error
+from pathlib import PosixPath
 from subprocess import run, CalledProcessError
 
 class KdeEnvironment(DesktopEnvironment):
-	def set_wallpaper(self, path): # path must be absolute
+	def set_wallpaper(self, path: PosixPath): # path must be absolute
 		script = f"""
 			var allDesktops = desktops();
 			for (i=0; i<allDesktops.length; i++) {{
