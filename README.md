@@ -4,7 +4,8 @@ The goal of this repository is to provide a full fledge application to linux des
 
 ## Dependencies
 
-Available soon...
+KDE: Depends on `qdbus`  
+_more soon_
 
 ## How the Project is Organized
 
