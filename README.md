@@ -28,13 +28,16 @@ tree of the project:
 wallpaperchanger/  
 ├── desktop\_environments/  
 │   ├── base.py  
+│   ├── error.py  
 │   ├── gnome.py  
+│   ├── hyprland.py  
+│   ├── i3.py  
 │   ├── \_\_init\_\_.py  
 │   ├── kde.py  
+│   ├── lxqt.py  
 │   ├── sway.py  
 │   ├── unknown.py  
 │   └── xfce.py  
-│   └── error.py  
 ├── discover\_de.py  
 └── main.py  
 
