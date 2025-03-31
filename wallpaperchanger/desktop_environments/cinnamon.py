@@ -6,6 +6,6 @@ from pathlib import PosixPath
 class CinnamonEnvironment(DesktopEnvironment):
 	def set_wallpaper(self, path: PosixPath): # the path must be absolute
 		try:
-			run(["gsettings", "set", "org.cinnamon.desktop.background", "picture-uri", f"file://{path.__str__()}], check=True)
+			run(["gsettings", "set", "org.cinnamon.desktop.background", "picture-uri", f"file://{path.__str__()}"], check=True)
 		except CalledProcessError:
 			print(Error.FailedToSetWallpaperCinnamon)
