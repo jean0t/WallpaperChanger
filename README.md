@@ -54,7 +54,6 @@ wallpaperchanger/
 └── main.py
 ```
 
-Here's a suggested **Installation** section for your README:
 
 ***
 
@@ -96,6 +95,27 @@ If you prefer using the `.whl` (Wheel) file:
 
 ***
 
+## Usage
+
+To change your desktop wallpaper, simply run the `wallpaperchanger` script followed by the path to the image you want to set as the wallpaper.
+
+### **Basic Command**
+
+```bash
+wallpaperchanger /path/to/your/wallpaper.jpg
+```
+
+This will automatically detect your desktop environment and set the wallpaper accordingly.
+
+### **Example**
+
+```bash
+wallpaperchanger /home/user/Pictures/background.jpg
+```
+
+This will set the image at `/home/user/Pictures/background.jpg` as the wallpaper for your current desktop environment.
+
+***
 
 ## License 📜
 
