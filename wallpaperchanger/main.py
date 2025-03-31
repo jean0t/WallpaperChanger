@@ -5,6 +5,7 @@ from wallpaperchanger.desktop_environments.lxqt import LxqtEnvironment
 from wallpaperchanger.desktop_environments.cinnamon import CinnamonEnvironment
 from wallpaperchanger.desktop_environments.sway import SwayEnvironment
 from wallpaperchanger.desktop_environments.hyprland import HyprlandEnvironment
+from wallpaperchanger.desktop_environments.i3 import I3Environment
 from wallpaperchanger.desktop_environments.unknown import UnknownEnvironment
 from wallpaperchanger.discover_de import Discover
 from pathlib import PosixPath
