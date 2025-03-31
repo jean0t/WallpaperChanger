@@ -28,7 +28,7 @@ It enforces the implementation of a common `set_wallpaper()` method that differs
 4. **Main Logic:**  
    `main.py` contains the main function with all the logic and serves as the starting point for the program.  
 5. **CLI Interface:**  
-   `run.py` provides the command-line interface for the program.  
+   `cli.py` provides the command-line interface for the program.  
 6. **Error Handling:**  
    `error.py` is located inside `desktop_environments` and provides a unified way to handle errors, making debugging easier without code duplication or hard-coded strings.
 
@@ -63,7 +63,7 @@ You can install **WallpaperChanger** either by manually downloading the tarball 
 
 ### **Option 1: Install from Tarball**
 
-1. Download the latest tarball from the [Releases page](https://github.com/yourusername/wallpaperchanger/releases).
+1. Download the latest tarball from the [Releases page](https://github.com/jean0t/wallpaperchanger/releases).
 2. Extract the tarball:
 
    ```bash
