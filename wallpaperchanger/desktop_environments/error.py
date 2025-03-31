@@ -4,6 +4,7 @@ class Error:
 	FailedToSetWallpaperCinnamon = "Failed to set Wallpaper, is the Path correct?"
 	FailedToSetWallpaperGnome = "Failed to set Wallpaper, is the Path correct?"
 	FailedToSetWallpaperXfce = "Failed to set Wallpaper, is the Path correct?"
+	FailedToSetWallpaperI3 = "Failed to set Wallpaper, is the Path correct?"
 
 	# unknown desktop environment
 	UnknownDesktopSetWallpaper = 'Unknown Desktop Environment, unable to identify and set wallpaper.'
