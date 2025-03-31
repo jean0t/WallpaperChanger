@@ -8,7 +8,8 @@ The goal of this repository is to provide a full-fledged application for Linux d
 **obs: if the desktop environment isn't listed here, consider that no dependency is needed**  
 - **KDE:** Depends on `qdbus`  
 - **I3:** Depends on `feh`
-- **Sway and Hyprland:** Depends on `swaybg`
+- **Sway:** Depends on `swaybg`
+- **Hyprland:** Depends on `hyprpaper`
 
 ## How the Project is Organized 🗂️
 
