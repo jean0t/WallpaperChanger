@@ -7,7 +7,6 @@ The goal of this repository is to provide a full-fledged application for Linux d
 ## Dependencies 🔧
 **obs: if the desktop environment isn't listed here, consider that no dependency is needed**  
 - **KDE:** Depends on `qdbus`  
-  _more soon..._
 
 ## How the Project is Organized 🗂️
 
