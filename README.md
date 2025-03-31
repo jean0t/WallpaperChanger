@@ -54,6 +54,49 @@ wallpaperchanger/
 └── main.py
 ```
 
+Here's a suggested **Installation** section for your README:
+
+***
+
+## Installation
+
+You can install **WallpaperChanger** either by manually downloading the tarball from the releases page or by installing the `.whl` file generated from the source.
+
+### **Option 1: Install from Tarball**
+
+1. Download the latest tarball from the [Releases page](https://github.com/yourusername/wallpaperchanger/releases).
+2. Extract the tarball:
+
+   ```bash
+   tar -xvzf wallpaperchanger-0.1.tar.gz
+   ```
+
+3. Navigate to the extracted folder:
+
+   ```bash
+   cd wallpaperchanger-0.1
+   ```
+
+4. Install the package:
+
+   ```bash
+   python setup.py install
+   ```
+
+### **Option 2: Install from .whl File**
+
+If you prefer using the `.whl` (Wheel) file:
+
+1. Download the `.whl` file from the [Releases page](https://github.com/jean0t/wallpaperchanger/releases) or build it using `python setup.py bdist_wheel`
+2. Install the `.whl` file using `pip`:
+
+   ```bash
+   pip install *.whl
+   ```
+
+***
+
+
 ## License 📜
 
 GPL-3
