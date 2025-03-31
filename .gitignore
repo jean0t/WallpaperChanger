@@ -2,3 +2,4 @@
 **/*.swp
 wallpaperchanger.egg-info/
 build/
+dist/
